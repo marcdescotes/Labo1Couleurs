@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pixel Art</title>
+</head>
+
+<body>
+
+
+  <h1>Pixel Art</h1>
+
+  <div>
+
+    <label for="grid-size">Taille de la grille</label>
+    <br>
+    <input type="range" min="2" max="50" value="16" class="slider" id="grid-size">
+    <br>
+    <span id="current-size"></span>
+
+  </div>
+
+
+  <h3>Choisissez vos couleurs</h2>
+
+    <div class="color-palette">
+
+      <label for="color-picker"></label>
+      <input type="color" id="color-picker">
+
+      <div id="color-list"></div>
+
+      <br>
+      <button id="add-color">Ajouter</button>
+      <button id="clear-palette">Effacer la palette</button>
+
+    </div>
+    <br>
+
+    <div class="container"></div>
+
+
+
+
+    <script src="grid.js"></script>
+
+</body>
+
+</html>
