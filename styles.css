@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    /* Je n'ai pas utilisé flex car ça ne créait pas toujours un grille carrée, certaines tailles affichaient la dernière rangée avec moins de carrés que les autres. J'ai donc combiner cela avec grid-template-columns pour avoir un parfait carré peu importe la taille : https://www.w3schools.com/cssref/pr_grid-template-columns.php */
+    /* Je n'ai pas utilisé flex car ça ne créait pas toujours une grille carrée, certaines tailles affichaient la dernière rangée avec moins de carrés que les autres. J'ai donc combiner cela avec grid-template-columns pour avoir un parfait carré peu importe la taille : https://www.w3schools.com/cssref/pr_grid-template-columns.php */
   display: grid;
   max-width: 400px;
   width: 100%;
@@ -17,6 +17,15 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media only screen and (max-width: 450px) {
+  .container {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+  }
+}
+
 
 .gridSquare {
   border: 0.25px solid rgb(0, 0, 0);
