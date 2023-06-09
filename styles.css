@@ -1,7 +1,11 @@
+html{
+color-scheme: light dark;
+}
+
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   text-align: center;
   box-sizing: border-box;
 }
@@ -26,13 +30,11 @@ body {
   }
 }
 
-
 .gridSquare {
   border: 0.25px solid rgb(0, 0, 0);
   box-sizing: border-box;
   margin: 0;
 }
-
 
 .color-palette {
   margin-top: 10px;
@@ -42,10 +44,20 @@ body {
   margin-top: 12px;
 }
 
-
 .color {
   display: inline-block;
   width: 20px;
   height: 20px;
   margin-top: 10px;
 }
+
+/*https://stackoverflow.com/questions/44209345/how-to-increase-the-length-size-of-html5-input-type-of-range*/
+input[type="range"] {
+  width: 35%;
+}
+
+#current-size {
+  font-size: 18px;
+}
+
+label { font-size: 18px; }
